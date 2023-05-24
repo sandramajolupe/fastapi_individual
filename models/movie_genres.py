@@ -1,6 +1,6 @@
 from sqlalchemy import Column, ForeignKey, Integer
 
-from config import Base
+from config.database import Base
 
 
 class MovieGenres(Base):

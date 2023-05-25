@@ -3,7 +3,7 @@ from typing import Optional
 
 class Movie(BaseModel):
         id: Optional[int] = None
-        title: str = Field(max_length=15,min_length=3)
+        title: str = Field(max_length=30,min_length=3)
         overview: str = Field(max_length=300,min_length=10)
         year: int = Field(le=2023)
         time: float = Field(ge=1,le=1000)

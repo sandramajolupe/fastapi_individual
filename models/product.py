@@ -4,7 +4,7 @@ from config.database import Base
 
 class Product(Base):
     
-    _tablename_= "product"
+    __tablename__= "product"
     
     id = Column(Integer, primary_key=True)
     name = Column(String)

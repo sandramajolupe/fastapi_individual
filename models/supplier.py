@@ -1,8 +1,3 @@
-from sqlalchemy import Column,Integer,String
-
-from config.database import Base
-
-
 from sqlalchemy import Column, Integer, String
 
 from config.database import Base
@@ -10,7 +5,7 @@ from config.database import Base
 
 class Supplier(Base):
     
-    _tablename_= "supplier"
+    __tablename__= "supplier"
     
     id = Column(Integer, primary_key=True)
     Name = Column(String)

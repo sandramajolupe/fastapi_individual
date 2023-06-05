@@ -15,11 +15,11 @@ class Product(BaseModel):
             schema_extra = {
                 "example":{
                     'id': 1,
-                    'name': 'arroz',
-                    'brand': "Diana",
-                    'description':"whiter and of good quality",
+                    'name': 'sweater',
+                    'brand': "zara",
+                    'description':"of the best quality",
                     'price': 2000,
-                    "entry_date": "ingresa la fecha",
+                    "entry_date": "enter the date",
                     "availability" :" yes",
                     "available_quantity" : 50
                 }

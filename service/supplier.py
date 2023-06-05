@@ -1,7 +1,7 @@
 from models.supplier import Supplier as SupplierModel
 from schemas.supplier import Supplier
 class SupplierService():
-    def _init_(self, db):
+    def __init__(self, db):
         self.db = db
         
     def get_supplier(self):
@@ -30,3 +30,14 @@ class SupplierService():
         supplier.Address = data.Address
         supplier.Phone = data.Phone
         supplier.Email = data.Email
+        
+
+
+        self.db.commit()
+        return
+    
+    def delete_supplier(self,id:int):
+        supplier = self.db.query(SupplierModel).filter(SupplierModel.id == id).first()
+        self.db.delete(supplier)
+        self.db.commit()
+        return

@@ -3,7 +3,7 @@ from config.database import Base
 
 
 class Supplies(Base):
-    _tablename_ = "supplies"
+    __tablename__ = "supplies"
 
     id=Column(Integer,primary_key=True)
     supplier_id = Column(Integer,ForeignKey("supplier.id"))

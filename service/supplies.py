@@ -2,7 +2,7 @@ from models.supplies import Supplies as SuppliesModel
 from schemas.supplies import Supplies
 
 class SuppliesService():
-    def _init_(self,db):
+    def __init__(self,db):
         self.db = db
 
     def get_supplies(self):

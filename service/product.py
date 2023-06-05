@@ -2,7 +2,7 @@ from models.product import Product as ProductModel
 from schemas.product import Product
 
 class ProductService():
-    def _init_(self, db):
+    def __init__(self, db):
         self.db = db
         
     def get_product(self):

@@ -12,9 +12,9 @@ class Supplier(BaseModel):
             schema_extra = {
                 "example":{
                     'id': 1,
-                    'Name': 'Heisenberg',
-                    'Address': "carrera 81b no. 24-65",
-                    'Phone':12345678910,
-                    'Email': "hux@gmail.com"
+                    'Name': 'zara',
+                    'Address': "carrera 91b no. 42-65",
+                    'Phone':12345676960,
+                    'Email': "sami@gmail.com"
                 }
             }
